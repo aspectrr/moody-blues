@@ -1,0 +1,51 @@
+{
+  "name": "moody-blues",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node -r tsconfig-paths/register src/index.ts",
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "db:generate": "drizzle-kit generate:pg",
+    "db:migrate": "ts-node src/db/migrate.ts",
+    "db:studio": "drizzle-kit studio",
+    "test": "jest",
+    "test:examples": "node --experimental-specifier-resolution=node --loader ts-node/esm src/testing/run-examples.ts",
+    "test:examples:dir": "node --experimental-specifier-resolution=node --loader ts-node/esm src/testing/run-examples.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aspectrr/moody-blues.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/aspectrr/moody-blues/issues"
+  },
+  "homepage": "https://github.com/aspectrr/moody-blues#readme",
+  "description": "Discord bot for open source project support and issue recreation",
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "@types/pg": "^8.15.4",
+    "chalk": "^5.4.1",
+    "drizzle-kit": "^0.31.1",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.824.0",
+    "@aws-sdk/s3-request-presigner": "^3.824.0",
+    "@fastify/cors": "^11.0.1",
+    "discord.js": "^14.19.3",
+    "dotenv": "^16.5.0",
+    "drizzle-orm": "^0.44.2",
+    "fastify": "^5.3.3",
+    "ollama": "^0.5.16",
+    "pg": "^8.16.0",
+    "postgres": "^3.4.7",
+    "zod": "^3.25.51"
+  }
+}
