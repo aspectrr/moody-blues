@@ -2,6 +2,9 @@
 
 An intelligent Discord bot that helps maintain open source projects by automatically diagnosing and recreating user issues.
 
+![moody-blues](https://github.com/user-attachments/assets/d5cb551b-2334-4af7-b585-021e15c9ad0b)
+
+
 ## 🌟 Features
 
 - 🎮 **Discord Integration**: Monitors help channels for user issues
