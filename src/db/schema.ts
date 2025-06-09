@@ -8,7 +8,7 @@ import {
   boolean,
 } from "drizzle-orm/pg-core";
 import { InferInsertModel, InferSelectModel } from "drizzle-orm";
-import { IssueStatus } from "../types/issues.js";
+import { IssueStatus } from "../types/issues";
 
 /**
  * Issues table - stores the main issue information

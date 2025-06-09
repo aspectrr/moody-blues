@@ -1,7 +1,7 @@
 import Fastify, { FastifyInstance } from "fastify";
 import cors from "@fastify/cors";
-import { getActiveIssues } from "../db/queries.js";
-import { getLlmStats } from "../llm/index.js";
+import { getActiveIssues } from "../db/queries";
+import { getLlmStats } from "../llm/index";
 
 // Create Fastify instance
 const fastify: FastifyInstance = Fastify({

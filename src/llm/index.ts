@@ -1,6 +1,6 @@
 import ollama from "ollama";
-import type { ApiVersion } from "../types/ollama.js";
-import { formatError } from "../utils/error.js";
+import type { ApiVersion } from "../types/ollama";
+import { formatError } from "../utils/error";
 
 // Store the Ollama model name from env
 const OLLAMA_MODEL = process.env.OLLAMA_MODEL || "qwen3";

@@ -2,7 +2,7 @@ import { spawn } from "child_process";
 import { existsSync } from "fs";
 import { writeFile, mkdir } from "fs/promises";
 import { join } from "path";
-import { Issue, IssueStatus } from "../types/issues.js";
+import { Issue, IssueStatus } from "../types/issues";
 import {
   addInvestigationUpdate,
   updateIssue,

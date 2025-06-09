@@ -5,7 +5,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import fs from "fs/promises";
 import chalk from "chalk";
-import { IssueSimulator } from "./simulator.js";
+import { IssueSimulator } from "./simulator";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);

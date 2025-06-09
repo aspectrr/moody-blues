@@ -1,10 +1,10 @@
 import fs from "fs/promises";
 import path from "path";
 import { EventEmitter } from "events";
-import { Issue, IssueStatus } from "../types/issues.js";
-import { analyzeUserQuery } from "../llm/analyzer.js";
-import { startIssueInvestigation } from "./investigator.js";
-import { formatError } from "../utils/error.js";
+import { Issue, IssueStatus } from "../types/issues";
+import { analyzeUserQuery } from "../llm/analyzer";
+import { startIssueInvestigation } from "./investigator";
+import { formatError } from "../utils/error";
 
 // Mock Discord message object structure
 export interface MockMessage {

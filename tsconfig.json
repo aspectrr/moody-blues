@@ -3,14 +3,13 @@
     /* Visit https://aka.ms/tsconfig to read more about this file */
 
     /* Language and Environment */
-    "target": "ES2022",
-    "lib": ["ES2022"],
+    "target": "ESNext",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
 
     /* Modules */
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
     "rootDir": "./src",
     "baseUrl": "./",
     "paths": {
@@ -18,10 +17,6 @@
     },
     "resolveJsonModule": true,
 
-    /* JavaScript Support */
-    "allowJs": true,
-    "checkJs": false,
-    
     /* Emit */
     "outDir": "./dist",
     "sourceMap": true,
@@ -54,6 +49,6 @@
     /* Completeness */
     "skipLibCheck": true
   },
-  "include": ["src/**/*.ts", "src/**/*.js"],
+  "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "dist"]
 }

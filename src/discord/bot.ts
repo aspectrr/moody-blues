@@ -8,11 +8,11 @@ import {
   ButtonStyle,
   ActionRowBuilder,
 } from "discord.js";
-import { createIssue } from "../db/queries.js";
-import { analyzeUserQuery } from "../llm/analyzer.js";
-import { IssueStatus, NewIssue } from "../types/issues.js";
-import { startIssueInvestigation } from "../testing/investigator.js";
-import { formatError } from "../utils/error.js";
+import { createIssue } from "../db/queries";
+import { analyzeUserQuery } from "../llm/analyzer";
+import { IssueStatus, NewIssue } from "../types/issues";
+import { startIssueInvestigation } from "../testing/investigator";
+import { formatError } from "../utils/error";
 
 // Track active help sessions
 const activeHelpSessions = new Map<

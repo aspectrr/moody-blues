@@ -1,7 +1,7 @@
 import { drizzle } from "drizzle-orm/postgres-js";
 import postgres from "postgres";
-import * as schema from "./schema.js";
-import { formatError } from "../utils/error.js";
+import * as schema from "./schema";
+import { formatError } from "../utils/error";
 
 // Database client instance
 let client: ReturnType<typeof postgres> | null = null;

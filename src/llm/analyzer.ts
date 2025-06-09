@@ -1,6 +1,6 @@
 import { sendMessage } from "./index.js";
-import { AnalysisResult } from "../types/issues.js";
-import { formatError } from "../utils/error.js";
+import { AnalysisResult } from "../types/issues";
+import { formatError } from "../utils/error";
 
 // Define prompt templates
 const ANALYSIS_SYSTEM_PROMPT = `

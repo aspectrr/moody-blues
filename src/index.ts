@@ -1,10 +1,10 @@
 import "dotenv/config";
 import { Client, GatewayIntentBits } from "discord.js";
-import { setupBot } from "./discord/bot.js";
-import { setupDatabase } from "./db/index.js";
-import { setupLLM } from "./llm/index.js";
-import { startApi } from "./api/index.js";
-import { runSimulator } from "./testing/simulator.js";
+import { setupBot } from "./discord/bot";
+import { setupDatabase } from "./db/index";
+import { setupLLM } from "./llm/index";
+import { startApi } from "./api/index";
+import { runSimulator } from "./testing/simulator";
 
 // Test Mode flag
 const TEST_MODE = process.env.TEST_MODE === "true";

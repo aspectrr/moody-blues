@@ -1,7 +1,7 @@
 import { eq } from "drizzle-orm";
-import { getDb } from "./index.js";
-import * as schema from "./schema.js";
-import { Issue, IssueStatus, NewIssue } from "../types/issues.js";
+import { getDb } from "./index";
+import * as schema from "./schema";
+import { Issue, IssueStatus, NewIssue } from "../types/issues";
 
 /**
  * Create a new issue in the database
